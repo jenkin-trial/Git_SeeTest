@@ -21,7 +21,7 @@ public class Test1 {
 
     @Test
     public void testCitiBankDemo(){
-        client.setDevice("adb:GT-I9500 (1)");
+        client.setDevice("adb:GT-I9500");
         client.launch("com.citiuat/.mobeix", true, false);
         client.sleep(3000);
         client.verifyElementFound("NATIVE", "xpath=//*[@class='com.mobeix.ui.ButtonUI']", 4);
